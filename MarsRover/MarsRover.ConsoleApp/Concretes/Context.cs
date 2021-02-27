@@ -1,14 +1,15 @@
 ﻿using MarsRover.ConsoleApp.Interfaces;
 using MarsRover.ConsoleApp.Models.Enums;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace MarsRover.ConsoleApp.Concretes
 {
     public class Context
     {
         private IStrategy _IStrategy;
+
+        public Context()
+        {
+        }
 
         public Context(IStrategy strategy)
         {

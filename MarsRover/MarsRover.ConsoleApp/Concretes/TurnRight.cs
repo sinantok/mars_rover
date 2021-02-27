@@ -5,9 +5,10 @@ namespace MarsRover.ConsoleApp.Concretes
 {
     class TurnRight : IStrategy
     {
-        public Direction Apply(Direction RoverDirection)
+        public Direction Apply(Direction direction)
         {
-            throw new System.NotImplementedException();
+            direction = (direction + 1) > Direction.W ? Direction.N : direction + 1;
+            return direction;
         }
     }
 }

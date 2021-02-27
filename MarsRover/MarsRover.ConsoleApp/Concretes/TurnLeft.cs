@@ -1,14 +1,14 @@
 ﻿using MarsRover.ConsoleApp.Interfaces;
 using MarsRover.ConsoleApp.Models.Enums;
-using System;
 
 namespace MarsRover.ConsoleApp.Concretes
 {
     public class TurnLeft : IStrategy
     {
-        public Direction Apply(Direction RoverDirection)
+        public Direction Apply(Direction direction)
         {
-            throw new NotImplementedException();
+            direction = (direction - 1) < Direction.N ? Direction.W : direction - 1;
+            return direction;
         }
     }
 }
