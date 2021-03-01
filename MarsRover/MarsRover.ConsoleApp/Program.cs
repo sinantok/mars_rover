@@ -31,7 +31,7 @@ namespace MarsRover.ConsoleApp
             roverHelper.Operations("MMRMMRMRRM");
 
             result = string.Format("{0} {1} {2}", roverHelper._ICoordinate.XCoordinate, roverHelper._ICoordinate.YCoordinate, roverHelper.Direction);
-            Console.WriteLine($"First Test Output : {result}");
+            Console.WriteLine($"Second Test Output : {result}");
 
             Console.ReadLine();
         }
